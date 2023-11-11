@@ -21,8 +21,32 @@
   </head>
   <body>
     <header>
-      <div class="d-lg-none">hide on lg and wider screens</div>
-      <div class="d-none d-lg-block">hide on screens smaller than lg</div>
+      <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <div>
+            <a class="navbar-brand d-lg-none d-block" href="#">
+              <img src="img/mobile-logo.png" alt="" width="40" height="" />
+            </a>
+            <a class="navbar-brand d-none d-lg-inline" href="#">
+              <img src="img/logo.svg" alt="" width="130" height="" />
+            </a>
+          </div>
+          <div class="searchbar">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Default input"
+              aria-label="default input example"
+            />
+          </div class='d-flex'>
+          <ul class="list-unstyled d-flex text-center mt-3">
+            <li class="me-3 d-none d-lg-inline"><i class="fa-solid fa-list-ul"></i></li>
+            <li class="me-3 d-none d-lg-inline"><i class="fa-solid fa-circle-question"></i></li>
+            <li class="me-3 d-none d-lg-inline"><i class="fa-solid fa-ellipsis-vertical "></i></li>
+            <li class="me-3"><i class="fa-regular fa-lightbulb"></i></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <div id="wrapper-up">
       <div id="sidebar">
