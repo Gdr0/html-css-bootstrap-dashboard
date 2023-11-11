@@ -1,9 +1,18 @@
+* {
+  font-family: ;
+}
 header {
-  height: 100px;
+  height: 70px;
   background-color: grey;
 }
+.blue {
+  background-color: #4c23ec;
+}
+.searchbar {
+  width: 75%;
+}
 #wrapper-up {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 70px);
   background-color: #1e2843;
   display: flex;
 }

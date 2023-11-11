@@ -21,6 +21,7 @@
   </head>
   <body>
     <header>
+      <!-- sidebar -->
       <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
           <div>
@@ -47,10 +48,12 @@
           </ul>
         </div>
       </nav>
+      <!-- navbar -->
     </header>
     <div id="wrapper-up">
+      <!-- sidebar -->
       <div id="sidebar">
-        <div class="side d-flex">
+        <div class="side d-flex text-center ">
           <ul class="list-unstyled mt-3">
             <li class="mb-2">
               <i class="fa-solid fa-house me-3"></i>
@@ -61,7 +64,7 @@
               <span class="d-none d-lg-inline">Stats</span>
             </li>
             <li class="">
-              <i class="fa-solid fa-signal me-3"></i>
+              <i class="fa-solid fa-signal me-2 "></i>
               <span class="d-none d-lg-inline">Signals</span>
             </li>
           </ul>
@@ -71,7 +74,60 @@
           </div>
         </div>
       </div>
-      <div id="main-content"></div>
+      <!-- sidebar -->
+      <div id="main-content">
+        <div class="container-fluid blue">
+          <div class="row text-light d-md-none d-lg-none d-inline">
+            <div class="col-12 col-md-3 mt-4">
+              <div class="">
+                <span class="">Nuovo studente</span>
+                <button type="button" class="btn btn-primary ms-3 border-white"><i class="fa-solid fa-plus"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-between">
+            <div class="col-12 col-md-5 mt-4">
+              <div class="mb-3">
+                <h2 class="d-inline text-white ">Boolean</h2>
+                <span class="badge rounded-pill bg-primary ms-3 fs-6 fw-normal">Piano blaze</span>
+              </div>
+                <nav style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#"><span class="badge bg-primary">3app</span></a></li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      <span class="badge bg-primary d-md-none d-inline">+</span>
+                      <span class="badge bg-primary d-none d-md-inline d-lg-inline ">Boolean mobile app</span>
+                      <span class="badge bg-primary d-none d-md-inline d-lg-inline ">Boolean web app </span>
+                      <span class="badge bg-primary d-none d-md-inline d-lg-inline ms-1">Boolean blog app</span>
+                    </li>
+                    <!-- <li class="breadcrumb-item active" aria-current="page"><span class="badge bg-primary">Boolean mobile app</span></li>
+                    <li class="breadcrumb-item active" aria-current="page"><span class="badge bg-primary">Boolean web app </span></li>
+                    <li class="breadcrumb-item active" aria-current="page"><span class="badge bg-primary">Boolean blog app</span></li> -->
+                  </ol>
+                </nav>
+              
+            </div>
+            <div class="col-12 col-md-4 text-white mt-3 mb-3  ">
+              <span class="mb-2">Studenti online negli ultimi 30 minuti</span>
+              <h4 class="mt-1">125</h4>
+            </div>
+            <div class="col-12 col-md-3 mt-4 text-light d-none d-md-inline d-lg-inline">
+              <div class="d-flex justify-content-end align-items-center">
+                <span class="">Nuovo studente</span>
+                <button type="button" class="btn btn-primary ms-3 border-white"><i class="fa-solid fa-plus"></i></button>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="row text-light d-none d-md-inline d-lg-inline">
+            <div class="col mt-4 text-light d-none d-md-inline d-lg-inline">
+              <div class="">
+                <span class="">Nuovo studente</span>
+                <button type="button" class="btn btn-primary ms-3 border-white"><i class="fa-solid fa-plus"></i></button>
+              </div>
+            </div>
+
+        </div> -->
+      </div>
     </div>
     <!-- js -->
     <script
