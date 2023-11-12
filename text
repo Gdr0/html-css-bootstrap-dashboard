@@ -1,0 +1,91 @@
+<div class="row">
+  <div class="col-12"></div>
+
+  <div class="col-12">
+    <table class="table border">
+      <thead>
+        <tr class="border-0">
+          <th scope="col">Nome</th>
+          <th scope="col">Data inizio</th>
+          <th scope="col">ROI</th>
+          <th scope="col">Stato</th>
+          <th scope="col">Azioni</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">
+            <i class="fa-solid fa-link"></i><span class="ms-2">Classe 75</span>
+          </th>
+          <td>15 Febbraio 2021</td>
+          <td>20%</td>
+          <td><span class="badge bg-success">Success</span></td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">
+            <i class="fa-solid fa-link"></i><span class="ms-2">Classe 76</span>
+          </th>
+          <td>16 Febbraio 2021</td>
+          <td>20%</td>
+          <td><span class="badge bg-success">Success</span></td>
+          <td>@twitter</td>
+        </tr>
+        <tr>
+          <th scope="row">
+            <i class="fa-solid fa-link"></i><span class="ms-2">Classe 77</span>
+          </th>
+          <td>17 Febbraio 2021</td>
+          <td>20%</td>
+          <td><span class="badge bg-warning">Warning</span></td>
+          <td>@twitter</td>
+        </tr>
+        <tr>
+          <th scope="row">
+            <i class="fa-solid fa-link"></i><span class="ms-2">Classe 78</span>
+          </th>
+          <td>18 Febbraio 2021</td>
+          <td>20%</td>
+          <td><span class="badge bg-success">Success</span></td>
+          <td>@twitter</td>
+        </tr>
+        <tr>
+          <th scope="row">
+            <i class="fa-solid fa-link"></i><span class="ms-2">Classe 79</span>
+          </th>
+          <td>19 Febbraio 2021</td>
+          <td>20%</td>
+          <td><span class="badge bg-danger">Danger</span></td>
+          <td>@twitter</td>
+        </tr>
+        <tr>
+          <th scope="row">
+            <i class="fa-solid fa-link"></i><span class="ms-2">Classe 80</span>
+          </th>
+          <td>20 Febbraio 2021</td>
+          <td>20%</td>
+          <td><span class="badge bg-success">Success</span></td>
+          <td>@twitter</td>
+        </tr>
+        <tr>
+          <th scope="row">
+            <i class="fa-solid fa-link"></i><span class="ms-2">Classe 81</span>
+          </th>
+          <td>21 Febbraio 2021</td>
+          <td>20%</td>
+          <td><span class="badge bg-danger">Danger</span></td>
+          <td>@twitter</td>
+        </tr>
+        <tr>
+          <th scope="row">
+            <i class="fa-solid fa-link"></i><span class="ms-2">Classe 82</span>
+          </th>
+          <td>22 Febbraio 2021</td>
+          <td>20%</td>
+          <td><span class="badge bg-success">Success</span></td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

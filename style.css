@@ -31,7 +31,7 @@ header {
 
 #main-content {
   flex-grow: 1;
-  background-color: chartreuse;
+  background-color: white;
 }
 
 @media screen and (min-width: 992px) {
