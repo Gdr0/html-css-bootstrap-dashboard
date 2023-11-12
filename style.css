@@ -1,9 +1,8 @@
 * {
   font-family: ;
 }
-header {
-  height: 70px;
-  background-color: grey;
+nav {
+  height: 100px;
 }
 .blue {
   background-color: #4c23ec;
@@ -12,14 +11,16 @@ header {
   width: 75%;
 }
 #wrapper-up {
-  height: calc(100vh - 70px);
+  height: calc(100vh - 100px);
   background-color: #1e2843;
   display: flex;
 }
 #sidebar {
-  width: 70px;
-  height: 100%;
+  width: 60px;
+
   background-image: url(img/sidebar-bg.png);
+  position: relative;
+  overflow-y: auto;
 }
 .side {
   color: white;
@@ -32,10 +33,12 @@ header {
 #main-content {
   flex-grow: 1;
   background-color: white;
+  position: relative;
+  overflow-y: auto;
 }
 
 @media screen and (min-width: 992px) {
   #sidebar {
-    width: 150px;
+    width: 120px;
   }
 }
