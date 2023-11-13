@@ -43,9 +43,17 @@
           <ul class="list-unstyled d-flex text-center mt-3">
             <li class="me-3 d-none d-lg-inline"><i class="fa-solid fa-list-ul"></i></li>
             <li class="me-3 d-none d-lg-inline"><i class="fa-solid fa-circle-question"></i></li>
-            <li class="me-3 d-none d-lg-inline"><i class="fa-solid fa-ellipsis-vertical "></i></li>
-            <li class="me-3"><i class="fa-regular fa-lightbulb"></i></li>
-          </ul>
+            <li class="me-3 d-none d-lg-inline"><i class="fa-solid fa-ellipsis-vertical"></i></li>
+            <li class="me-3">
+            <div class="dropdown">
+              <div class="fa-solid fa-bell text-warning" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+              </div>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Profilo</a></li>
+                <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
         </div>
       </nav>
       <!-- navbar -->
@@ -56,21 +64,29 @@
         <div class="side d-flex text-center ">
           <ul class="list-unstyled mt-3">
             <li class="mb-2">
-              <i class="fa-solid fa-house me-3"></i>
+              <button type="button" class="btn btn-outline-secondary text-light border-0">
+                <i class="fa-solid fa-house me-3"></i>
               <span class="d-none d-lg-inline">Home</span>
+              </button>
             </li>
             <li class="mb-2">
-              <i class="fa-solid fa-chart-simple me-3"></i>
+              <button type="button" class="btn btn-outline-secondary text-light border-0">
+                <i class="fa-solid fa-chart-simple me-3"></i>
               <span class="d-none d-lg-inline">Stats</span>
+              </button>
             </li>
             <li class="">
-              <i class="fa-solid fa-signal me-2 "></i>
-              <span class="d-none d-lg-inline">Signals</span>
+              <button type="button" class="btn btn-outline-secondary text-light border-0">
+                <i class="fa-solid fa-signal me-2 "></i>
+                <span class="d-none d-lg-inline">Signals</span>
+              </button>
             </li>
           </ul>
           <div class="imp text-center mb-4">
-            <i class="fa-solid fa-gear me-3"></i>
-            <span class="d-none d-lg-inline">Admin</span>
+            <button type="button" class="btn btn-outline-secondary text-light border-0">
+              <i class="fa-solid fa-gear me-3"></i>
+              <span class="d-none d-lg-inline">Admin</span>
+            </button>
           </div>
         </div>
       </div>
@@ -82,24 +98,26 @@
             <div class="col-12 col-md-3 mt-4">
               <div class="">
                 <span class="">Nuovo studente</span>
-                <button type="button" class="btn btn-primary ms-3 border-white"><i class="fa-solid fa-plus"></i></button>
+                <button type="button" class="btn btn-outline-light ms-3 border-white"><i class="fa-solid fa-plus"></i></button>
               </div>
             </div>
           </div>
           <div class="row justify-between">
             <div class="col-12 col-md-5 mt-4">
-              <div class="mb-3">
+              <div class="mb-2">
                 <h2 class="d-inline text-white ">Boolean</h2>
                 <span class="badge rounded-pill bg-primary ms-3 fs-6 fw-normal">Piano blaze</span>
               </div>
                 <nav style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#"><span class="badge bg-primary">3app</span></a></li>
+                    <li class="breadcrumb-item ">
+                      <a href="#"><span class="badge rounded-pill bg-primary">3app</span></a>
+                    </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      <span class="badge bg-primary d-md-none d-inline">+</span>
-                      <span class="badge bg-primary d-none d-md-inline d-lg-inline ">Boolean mobile app</span>
-                      <span class="badge bg-primary d-none d-md-inline d-lg-inline ">Boolean web app </span>
-                      <span class="badge bg-primary d-none d-md-inline d-lg-inline ms-1">Boolean blog app</span>
+                      <span class="badge rounded-pill bg-primary d-md-none d-inline">+</span>
+                      <span class="badge rounded-pill bg-gradient  d-none d-md-inline d-lg-inline ">Boolean mobile app</span>
+                      <span class="badge rounded-pill bg-gradient d-none d-md-inline d-lg-inline ">Boolean web app </span>
+                      <span class="badge rounded-pill bg-gradient  d-none d-md-inline d-lg-inline ms-1">Boolean blog app</span>
                     </li>
                     <!-- <li class="breadcrumb-item active" aria-current="page"><span class="badge bg-primary">Boolean mobile app</span></li>
                     <li class="breadcrumb-item active" aria-current="page"><span class="badge bg-primary">Boolean web app </span></li>
@@ -112,12 +130,12 @@
               <span class="mb-2">Studenti online negli ultimi 30 minuti</span>
               <h4 class="mt-1">125</h4>
             </div>
-            <div class="col-12 col-md-3 mt-4 text-light d-none d-md-inline d-lg-inline">
+            <!-- <div class="col-12 col-md-3 mt-4 text-light d-none d-md-inline d-lg-inline">
               <div class="d-flex justify-content-end align-items-center">
                 <span class="">Nuovo studente</span>
-                <button type="button" class="btn btn-primary ms-3 border-white"><i class="fa-solid fa-plus"></i></button>
+                <button type="button" class="btn text-white ms-3 border-white"><i class="fa-solid fa-plus"></i></button>
               </div>
-            </div>
+            </div> -->
           </div>
       </div>
 
@@ -133,14 +151,14 @@
           </h4>
           <div class="container ">
             <div class="tabella ">
-            <div class="row border-bottom  pb-2">
-              <div class="col-4 col-md-4">Nome</div>
+            <div class="row border-bottom py-2 pb-2">
+              <div class="col-4 col-md-4 ">Nome</div>
               <div class="col-md-3 text-center d-none d-md-block">Data di inizio </div>
               <div class="col-md-1 text-center d-none d-md-block">ROI</div>
               <div class="col-4 col-md-2 text-center">Stato</div>
               <div class="col-4 col-md-2 text-center">Azioni</div>
             </div>
-            <div class="row border-bottom align-items-center">
+            <div class="row border-bottom align-items-center py-2">
               <div class="col-4 col-md-4"><i class="fa-solid fa-link"></i><span class="ms-2">Classe 75</span></div>
               <div class="col-md-3 text-center d-none d-md-block">15 Febbraio 2021</div>
               <div class="col-md-1 text-center d-none d-md-block">20%</div>
@@ -148,7 +166,7 @@
               <div class="col-4 col-md-2 text-center"><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></div>
             </div>
-            <div class="row border-bottom  align-items-center">
+            <div class="row border-bottom  align-items-center py-2">
               <div class="col-4 col-md-4"><i class="fa-solid fa-link"></i><span class="ms-2">Classe 76</span></div>
               <div class="col-md-3 text-center d-none d-md-block">15 Febbraio 2021</div>
               <div class="col-md-1 text-center d-none d-md-block">20%</div>
@@ -156,7 +174,7 @@
               <div class="col-4 col-md-2 text-center"><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></div>
             </div>
-            <div class="row border-bottom  align-items-center">
+            <div class="row border-bottom  align-items-center py-2">
               <div class="col-4 col-md-4"><i class="fa-solid fa-link"></i><span class="ms-2">Classe 77</span></div>
               <div class="col-md-3 text-center d-none d-md-block">15 Febbraio 2021</div>
               <div class="col-md-1 text-center d-none d-md-block">20%</div>
@@ -164,7 +182,7 @@
               <div class="col-4 col-md-2 text-center"><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></div>
             </div>
-            <div class="row border-bottom  align-items-center">
+            <div class="row border-bottom  align-items-center py-2">
               <div class="col-4 col-md-4"><i class="fa-solid fa-link"></i><span class="ms-2">Classe 78</span></div>
               <div class="col-md-3 text-center d-none d-md-block">15 Febbraio 2021</div>
               <div class="col-md-1 text-center d-none d-md-block">20%</div>
@@ -172,7 +190,7 @@
               <div class="col-4 col-md-2 text-center"><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></div>
             </div>
-            <div class="row border-bottom  align-items-center">
+            <div class="row border-bottom  align-items-center py-2">
               <div class="col-4 col-md-4"><i class="fa-solid fa-link"></i><span class="ms-2">Classe 79</span></div>
               <div class="col-md-3 text-center d-none d-md-block">15 Febbraio 2021</div>
               <div class="col-md-1 text-center d-none d-md-block">20%</div>
@@ -180,7 +198,7 @@
               <div class="col-4 col-md-2 text-center"><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></div>
             </div>
-            <div class="row border-bottom   align-items-center">
+            <div class="row border-bottom   align-items-center py-2">
               <div class="col-4 col-md-4"><i class="fa-solid fa-link"></i><span class="ms-2">Classe 80</span></div>
               <div class="col-md-3 text-center d-none d-md-block">15 Febbraio 2021</div>
               <div class="col-md-1 text-center d-none d-md-block">20%</div>
@@ -188,7 +206,7 @@
               <div class="col-4 col-md-2 text-center "><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></div>
             </div>
-            <div class="row border-bottom  align-items-center">
+            <div class="row border-bottom  align-items-center py-2">
               <div class="col-4 col-md-4"><i class="fa-solid fa-link"></i><span class="ms-2">Classe 81</span></div>
               <div class="col-md-3 text-center d-none d-md-block">15 Febbraio 2021</div>
               <div class="col-md-1 text-center d-none d-md-block">20%</div>
@@ -196,7 +214,7 @@
               <div class="col-4 col-md-2 text-center"><button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
                 <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button></div>
             </div>
-            <div class="row border-bottom  align-items-center">
+            <div class="row border-bottom  align-items-center py-2">
               <div class="col-4 col-md-4"><i class="fa-solid fa-link"></i><span class="ms-2">Classe 82</span></div>
               <div class="col-md-3 text-center d-none d-md-block">15 Febbraio 2021</div>
               <div class="col-md-1 text-center d-none d-md-block">20%</div>
